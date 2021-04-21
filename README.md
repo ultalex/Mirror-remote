@@ -18,7 +18,7 @@ Changes in the MMM-Remote-Control module
 api.js add to line 109 (after  this.configOnHd.modules.filter (mod => skippedModules)
 
 	//системный монитор
-		getStats: function() { //http://localhost:6860/api/systemStats?apiKey=vc2ult5476acb
+		getStats: function() { 
             var fs =  require('fs');
             var os =  require('os');
             //var async = require('async'); //системный монитор (systemStats)
