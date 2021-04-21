@@ -12,18 +12,12 @@ Application for the MMM-Remote-Control module
 2 языка: русский (основной), английский (дополнительный)
 Горячие клавиши;
 Работа с несколькими зеркалами;
-Пользовательские команды. Приложение
-Дом
-Модули
-Настройки
-Добавить зеркало
-Добавить команду
-Ярлыки
+Пользовательские команды.
 
 Изменения в модуле MMM-Remote-Control
 api.js добавить в строку 109 (после this.configOnHd.modules.filter (mod => skippedModules)
 
-//системный монитор
+	//системный монитор
 		getStats: function() { //http://localhost:6860/api/systemStats?apiKey=vc2ult5476acb
             var fs =  require('fs');
             var os =  require('os');
@@ -52,8 +46,7 @@ api.js добавить в строку 109 (после this.configOnHd.modules.
 		},
 api.js добавить в строку 156 (после this.expressRouter.route (['/ test', '/']))
 
-this.expressRouter.route(['/systemStats']) // //системный монитор без apiKey
-
+	this.expressRouter.route(['/systemStats']) // //системный монитор без apiKey
             .get((req, res) => {
                 if (!this.checkInititialized(res)) { return; }
                 res.json({ data: this.getStats() });
@@ -61,8 +54,7 @@ this.expressRouter.route(['/systemStats']) // //системный монито�
 api.js добавить в строку 226 (после this.expressRouter.route ([
 '/ refresh /: delayed?',)
 
-this.expressRouter.route(['/startVNC']) // запуск VNC
-
+	this.expressRouter.route(['/startVNC']) // запуск VNC
             .get((req, res) => {
                 if(!this.apiKey && this.secureEndpoints) return res.status(403).json({ success: false, message: "Forbidden: API Key Not Provided in Config! Use secureEndpoints to bypass this message" });
                 if (!this.checkInititialized(res)) { return; }
