@@ -13,6 +13,7 @@ Application for the MMM-Remote-Control module
 Горячие клавиши;
 Работа с несколькими зеркалами;
 Пользовательские команды.
+![Home](home.jpg)
 
 Изменения в модуле MMM-Remote-Control
 api.js добавить в строку 109 (после this.configOnHd.modules.filter (mod => skippedModules)
