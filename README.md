@@ -53,6 +53,7 @@ api.js добавить в строку 109 (после this.configOnHd.modules.
 api.js добавить в строку 156 (после this.expressRouter.route (['/ test', '/']))
 
 this.expressRouter.route(['/systemStats']) // //системный монитор без apiKey
+
             .get((req, res) => {
                 if (!this.checkInititialized(res)) { return; }
                 res.json({ data: this.getStats() });
@@ -61,6 +62,7 @@ api.js добавить в строку 226 (после this.expressRouter.route
 '/ refresh /: delayed?',)
 
 this.expressRouter.route(['/startVNC']) // запуск VNC
+
             .get((req, res) => {
                 if(!this.apiKey && this.secureEndpoints) return res.status(403).json({ success: false, message: "Forbidden: API Key Not Provided in Config! Use secureEndpoints to bypass this message" });
                 if (!this.checkInititialized(res)) { return; }
