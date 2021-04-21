@@ -1,22 +1,21 @@
 # Mirror-remote
-Application for the MMM-Remote-Control module
- 
-Работает только в сетях Wi-Fi.
-Возможны неточности в переводе на английский.
-Реализовано:
-Управление питанием и монитором;
-Отображение системной информации о Raspberry Pi; (необходимы изменения в модуле MMM-Remote-Control)
-Запуск VNC; (требуются изменения в модуле MMM-Remote-Control)
-Виджеты переключения профилей, таймер, секундомер, дыхательные упражнения, установленные модули (тестовый виджет);
-Виджет отображает необходимый для установки модуль;
-2 языка: русский (основной), английский (дополнительный)
-Горячие клавиши;
-Работа с несколькими зеркалами;
-Пользовательские команды.
+Application for the MMM-Remote-Control module.
+Works only on Wi-Fi networks.
+Inaccuracies with the translation into English are possible.
+Implemented:
+Power and monitor management;
+Displaying system information about the raspberry pi; (changes are required in the MMM-Remote-Control module)
+VNC launch; (changes are required in the MMM-Remote-Control module)
+Widgets for switching profiles, timer, stopwatch, breathing exercises, installed modules (test widget);
+The widget displays the module required for installation;
+2 languages: Russian (main), English (additional)
+Shortcuts;
+Working with multiple mirrors;
+Custom commands.
 ![Home](home.jpg)
 
-Изменения в модуле MMM-Remote-Control
-api.js добавить в строку 109 (после this.configOnHd.modules.filter (mod => skippedModules)
+Changes in the MMM-Remote-Control module
+api.js add to line 109 (after  this.configOnHd.modules.filter (mod => skippedModules)
 
 	//системный монитор
 		getStats: function() { //http://localhost:6860/api/systemStats?apiKey=vc2ult5476acb
@@ -45,14 +44,14 @@ api.js добавить в строку 109 (после this.configOnHd.modules.
             exec('vncserver-x11 -showstatus');  
             return 'OK';
 		},
-api.js добавить в строку 156 (после this.expressRouter.route (['/ test', '/']))
+api.js add to line 156 (after  this.expressRouter.route (['/ test', '/']))
 
 	this.expressRouter.route(['/systemStats']) // //системный монитор без apiKey
             .get((req, res) => {
                 if (!this.checkInititialized(res)) { return; }
                 res.json({ data: this.getStats() });
             });
-api.js добавить в строку 226 (после this.expressRouter.route ([
+api.js add to line 226 (after  this.expressRouter.route ([
 '/ refresh /: delayed?',)
 
 	this.expressRouter.route(['/startVNC']) // запуск VNC
