@@ -21,8 +21,6 @@ api.js add to line 109 (after  this.configOnHd.modules.filter (mod => skippedMod
 		getStats: function() { 
             var fs =  require('fs');
             var os =  require('os');
-            //var async = require('async'); //системный монитор (systemStats)
-            //var exec = require('child_process').exec; //системный монитор
             var stats = ''
 
             var temperature = fs.readFileSync("/sys/class/thermal/thermal_zone0/temp");
@@ -30,7 +28,7 @@ api.js add to line 109 (after  this.configOnHd.modules.filter (mod => skippedMod
             var cpu = fs.readFileSync("/proc/loadavg");
             cpu = cpu.slice(0,4);
             var upTime = fs.readFileSync("/proc/uptime");
-            //var memory = fs.readFileSync(exec("df -h|grep /dev/root|awk '{print $4}'"))
+            
                 
             stats = 'temp: '+temperature+'; '+'cpu: '+cpu+'/'+os.cpus().length+'; '+'ram: '+Math.floor(os.freemem()/os.totalmem()*100)+'; '+'uptime: '+os.uptime()+';';//+'memory: '+memory+';';
                 
