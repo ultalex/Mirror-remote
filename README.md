@@ -6,12 +6,14 @@ Implemented:
 Power and monitor management;
 Displaying system information about the raspberry pi; (changes are required in the MMM-Remote-Control module)
 VNC launch; (changes are required in the MMM-Remote-Control module)
-Widgets for switching profiles, timer, stopwatch, breathing exercises, installed modules (test widget);
+Widgets for switching profiles (MMM-ProfileSwitcher), timer, stopwatch (MMM-StopwatchTimer), breathing exercises (MMM-Breathwork), installed modules (test widget);
 The widget displays the module required for installation;
 2 languages: Russian (main), English (additional)
 Shortcuts;
 Working with multiple mirrors;
-Custom commands.
+Custom commands;
+Changing the volume of the mirror (MMM-Volume).
+
 ![Home](home.jpg)
 
 Changes in the MMM-Remote-Control module
