@@ -14,7 +14,8 @@ Inaccuracies with the translation into English are possible.<br>
 - [Custom commands;](https://github.com/ultalex/Mirror-remote/blob/main/add_command.jpg)<br>
 - Changing the volume of the mirror (MMM-Volume).<br>
 <br>
-Password for admin mode *"Admin"*
+
+*Password for admin mode "Admin"*
 <br>
 
 ![Home](home.jpg)
