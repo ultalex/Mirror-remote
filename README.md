@@ -6,14 +6,16 @@ Inaccuracies with the translation into English are possible.<br>
 - Power and monitor management;<br>
 - Displaying system information about the raspberry pi; (changes are required in the MMM-Remote-Control module)<br>
 - VNC launch; (changes are required in the MMM-Remote-Control module)<br>
-- Widgets for switching profiles (MMM-ProfileSwitcher), timer, stopwatch (MMM-StopwatchTimer), breathing exercises (MMM-Breathwork), installed modules (test widget);<br>
+- [Widgets for switching profiles (MMM-ProfileSwitcher), timer, stopwatch (MMM-StopwatchTimer), breathing exercises (MMM-Breathwork), installed modules (test widget);](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
 - The widget displays the module required for installation;<br>
 - 2 languages: Russian (main), English (additional)<br>
-- Shortcuts;<br>
-- Working with multiple mirrors;<br>
-- Custom commands;<br>
+- [Shortcuts;](https://github.com/ultalex/Mirror-remote/blob/main/shortcuts.jpg)<br>
+- [Working with multiple mirrors;](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
+- [Custom commands;](https://github.com/ultalex/Mirror-remote/blob/main/add_command.jpg)<br>
 - Changing the volume of the mirror (MMM-Volume).<br>
-
+Password for admin mode *"Admin"*
+<br>
+<br>
 ![Home](home.jpg)
 
 ## Changes in the MMM-Remote-Control module<br>
