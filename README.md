@@ -8,7 +8,7 @@ Inaccuracies with the translation into English are possible.<br>
 - VNC launch; (changes are required in the MMM-Remote-Control module)<br>
 - [Widgets for switching profiles (MMM-ProfileSwitcher), timer, stopwatch (MMM-StopwatchTimer), breathing exercises (MMM-Breathwork), installed modules (test widget);](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
 - The widget displays the module required for installation;<br>
-- 2 languages: Russian (main), English, French (draft), German (draft)<br>
+- 4 languages: Russian (main), English, French (draft), German (draft)<br>
 - [Shortcuts;](https://github.com/ultalex/Mirror-remote/blob/main/shortcuts.jpg)<br>
 - [Working with multiple mirrors;](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
 - [Custom commands;](https://github.com/ultalex/Mirror-remote/blob/main/add_command.jpg)<br>
