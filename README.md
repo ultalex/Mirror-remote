@@ -13,7 +13,7 @@ Inaccuracies with the translation into English are possible.<br>
 - [Working with multiple mirrors;](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
 - [Custom commands;](https://github.com/ultalex/Mirror-remote/blob/main/add_command.jpg)<br>
 - Changing the volume of the mirror (MMM-Volume);<br>
-- [Changing the the configuration of modules.](https://github.com/ultalex/Mirror-remote/blob/main/ModulesConfig.jpg)<br>
+- [Changing the the configuration of modules.](https://github.com/ultalex/Mirror-remote/blob/main/ModulesConfig.jpg) (Test function)<br>
 <br>
 
 *Password for admin mode "Admin"*
