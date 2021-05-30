@@ -12,8 +12,10 @@ Inaccuracies with the translation into English are possible.<br>
 - [Shortcuts;](https://github.com/ultalex/Mirror-remote/blob/main/shortcuts.jpg)<br>
 - [Working with multiple mirrors;](https://github.com/ultalex/Mirror-remote/blob/main/modules.jpg)<br>
 - [Custom commands;](https://github.com/ultalex/Mirror-remote/blob/main/add_command.jpg)<br>
+- Editing of custom commands;
 - Changing the volume of the mirror (MMM-Volume);<br>
-- [Changing the configuration of modules.](https://github.com/ultalex/Mirror-remote/blob/main/ModulesConfig.jpg) (Test function)<br>
+- [Changing the configuration of modules;](https://github.com/ultalex/Mirror-remote/blob/main/ModulesConfig.jpg) (Test function)<br>
+- Changing mirror configuration setting.
 <br>
 
 *Password for admin mode "Admin"*
